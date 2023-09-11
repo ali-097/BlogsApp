@@ -1,0 +1,56 @@
+/* Blog.css */
+
+/* Reset default styles for body, div, h1, and p */
+body,
+div,
+h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Container for blogs */
+.blogs-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f5f5f5;
+	padding: 20px;
+
+	/* Animation when the container loads */
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Create Blog button */
+.create-blog {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	background-color: #2196f3;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+
+	&:hover {
+		background-color: #1976d2;
+		transform: scale(1.1); /* Apply scale transform on hover */
+	}
+
+	/* Animation for Create Blog button */
+	animation: fadeIn 0.5s ease;
+}

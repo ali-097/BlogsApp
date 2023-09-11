@@ -1,0 +1,72 @@
+.edit-modal-body {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.edit-modal-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	z-index: 1001;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-modal-close {
+	color: #333;
+	font-size: 24px;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.edit-modal-close:hover {
+	color: #1111113f;
+}
+
+.edit-form-title,
+.edit-form-content {
+	width: 90%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.edit-form-content {
+	height: 200px;
+	resize: none;
+}
+
+.edit-form-button {
+	background-color: #2196f3;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 18px;
+	margin-top: 10px;
+	width: 95%;
+}
+
+.edit-form-button:hover {
+	background-color: #1976d2;
+}
+
+.edit-form-button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
